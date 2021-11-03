@@ -31,10 +31,14 @@ NuGET Akka.NET v1.4.25
 
 # What is working?
 
-• Each  node  is  added  to  the  network  consecutively  and  after  every  node  has  joined  the  network,  the  message  starts  getting transmitted  to  every other node. 
-• The transmission is terminated after each node gets a request. 
-• The average number of hops for the test cases ranged between 1.2 to 5.846. We can infer from this statistic that while searching in a node, the average number of hops would be about 3. 
+• Each  node  is  added  to  the  network  consecutively  and  after  every  node  has  joined  the  network,  the  message  starts  getting transmitted  to  every other node.
+  
+• The transmission is terminated after each node gets a request.
+  
+• The average number of hops for the test cases ranged between 1.2 to 5.846. We can infer from this statistic that while searching in a node, the average number of hops would be about 3.
+  
 • Given, the number of requests to be delivered to every node using the chord protocol, the average number of hops (output) has been generated and implemented successfully.
+  
 • All functionalities have been implemented and are working successfully.
 
 # Largest network obtained
@@ -43,7 +47,10 @@ The largest network we were able to work with was 5000 nodes and 10 requests. Th
 
 # Some Interesting Observations 
 • When the number of requests is greater than the number of nodes, we observed a slight increase (less than 1) in the average hope count.
+  
 • Larger the number of nodes in the network and smaller the number of requests, we observed a reasonable increase (greater than 1) in the average number of hops. The average hop values in this case were observed to lie between 2 and 5. 
+  
 • When the number of requests and the number of nodes are equal (difference is negligible), the average number of hops are less than or equal to 1. 
+  
 • Larger the number of nodes in the network, the program takes a substantial amount of time to finish execution.
 
